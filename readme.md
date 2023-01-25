@@ -1,3 +1,3 @@
-# Git and Github
+# Git and Github pizza
 
 Proect Pizza
