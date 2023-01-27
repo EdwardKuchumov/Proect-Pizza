@@ -41,7 +41,7 @@
                         <div class="main__video-block"><img src="./img/shourav-sheikh-a66sGfOnnqQ-unsplash 1.png" alt="@" class="main__video"></div>
                         <div class="main__toggle-cont">
                             <div class="main__toggle-block">
-                                <div class="main__toggle-order">To Order</div>
+                                <div class="main__toggle-order color_button">To Order</div>
                                 <div class="main__toggle-menu">Pizza-Menu</div>
                             </div>
                             <div class="main__toggle-img"><img src="./img/Vector 1.png" alt="2" class="main__toggle-img-link"></div>
@@ -64,16 +64,16 @@
                     <div class="main__menu-header">Menu</div>
                     <div class="main__menu-filter-block">
                         <ul class="main__filter-list">
-                            <li class="main__menu-item">Show All</li>
-                            <li class="main__menu-item">Meat</li>
-                            <li class="main__menu-item">Vegitarian</li>
-                            <li class="main__menu-item">Sea produts</li>
-                            <li class="main__menu-item">Mushroom</li>
+                            <li class="main__menu-item" id="#showall">Show All</li>
+                            <li class="main__menu-item" id="#meat-filter">Meat</li>
+                            <li class="main__menu-item" id="#vegitarian-filter">Vegitarian</li>
+                            <li class="main__menu-item" id="#sea-filter">Sea produts</li>
+                            <li class="main__menu-item" id="#mushroom-filter">Mushroom</li>
                         </ul>
                     </div>
                     <div class="main__menu-select-pazza-block">
                         <ul class="main__select-block">
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#meat">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Italian</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -106,7 +106,7 @@
                                     <button class="main__order-now">Order Now</button>
                                 </div>
                             </li>
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#sea">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Venecia</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -139,7 +139,7 @@
                                     <button class="main__order-now">Order Now</button>
                                 </div>
                             </li>
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#meat">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Meat</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -172,7 +172,7 @@
                                     <button class="main__order-now">Order Now</button>
                                 </div>
                             </li>
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#vegetarian">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Cheese</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -208,7 +208,7 @@
                         </ul>
                         <div class="main__pizza-popular">MOST POPULAR PIZZA</div>
                         <ul class="main__select-block">
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#sea">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Argentina</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -241,7 +241,7 @@
                                     <button class="main__order-now">Order Now</button>
                                 </div>
                             </li>
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#mushroom">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Gribnaya</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -274,7 +274,7 @@
                                     <button class="main__order-now">Order Now</button>
                                 </div>
                             </li>
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#vegetarian">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Tomato</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -307,7 +307,7 @@
                                     <button class="main__order-now">Order Now</button>
                                 </div>
                             </li>
-                            <li class="main__pizza-item">
+                            <li class="main__pizza-item" id="#meat">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Italian x2</div>
                                 <div class="main__pizza-description">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</div>
@@ -347,7 +347,7 @@
             <main class="main__modal-block none">
                 <div class="main__modal">
                     <div class="main__modal-container">
-                        <div class="main__modal-header">Вход в личный кабинет</div>
+                        <div class="main__modal-header">Log in user</div>
                         <div class="main__modal-input">
                             <div class="main__modal-input-text">Name</div>
                             <input type="text">
@@ -355,8 +355,8 @@
                             <input type="password">
                         </div>
                         <div class="main__modal-button">
-                            <button class="main__modal-button-link">Войти</button>
-                            <button class="main__modal-button-link-close">Закрыть</button>
+                            <button class="main__modal-button-link">Select</button>
+                            <button class="main__modal-button-link-close">Close</button>
                         </div>
                     </div>
                 </div>
