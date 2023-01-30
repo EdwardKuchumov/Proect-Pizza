@@ -55,6 +55,7 @@
     // .main__video-block
 
     &__video-block {
+        padding-top: 12px;
     }
 
     // .main__video
@@ -75,7 +76,8 @@
         align-items: center;
         border: 1px solid#FFA631;
         border-radius: 100px;
-
+        position: relative;
+        top: 0;
     }
 
     // .main__toggle-order
@@ -86,8 +88,14 @@
         line-height: 123.5%;
         color: #FFFFFF;
         // background: linear-gradient(261.48deg, #FE9C1C -17.13%, #FF5E2A 86.76%);
+        transition: all 0.3s;
         border-radius: 100px;
         padding: 17px 72px;
+        z-index: 4;
+        cursor: pointer;
+    }
+    &__toggle-order:hover{
+        opacity: 0.5;
     }
 
     // .main__toggle-menu
@@ -97,15 +105,42 @@
         font-weight: 500;
         font-size: 18.8053px;
         line-height: 123.5%;
-        // background-color: #FE9C1C;
+        transition: all 0.3s;
         padding: 20px 35px 19px 19px;
         border-radius: 100px; 
         color: #FE9C1C;
+        z-index: 4;
     }
     &__toggle-menu:hover{
-        color: rgb(255, 255, 255);
+        opacity: 0.5;
     }
-
+    &__toggle-backgroud{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 229.93px;
+        height: 62px;
+        background: linear-gradient(261.48deg, #FE9C1C -17.13%, #FF5E2A 86.76%);
+        border-radius: 100px;
+        transition: all 0.7s;
+    }
+    // плавный переходник для переключателя
+    &__toggle-menu-hover{
+        .main__toggle-order{
+            color: #FE9C1C;
+            transition: all 0.3s;
+        }
+        .main__toggle-backgroud{
+            transition: all 0.7s;
+            left: 211px;
+            width: 180px;
+            
+        }
+        .main__toggle-menu{
+            color: #FFFFFF;
+            transition: all 0.3s;
+        }
+    }
     // .main__img-block
 
     &__img-block {
@@ -163,4 +198,7 @@
         right: 147px;
         z-index: -1;
     }
+}
+iframe{
+    border-radius: 23px;
 }

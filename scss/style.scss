@@ -98,7 +98,13 @@ body{
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
+            opacity: 1;
+            transition: all 0.5s;
 		}
+        &__logo-link:hover{
+            opacity: 0.5;
+            transition: all 0.5s;
+        }
 
 		// .header__nav
 
@@ -124,17 +130,17 @@ body{
             flex-direction: column;
             align-items: center;
         }
-        &__item:hover{
-            .header__role{
-                background-color: #FF6432;
-            }
-            .header__name{
-                background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
-    
+        &__item{
+            .header__name:hover{
+                transition: all 0.5s;
+                color: #FF6432;
+                .header__role{
+                    transition: all 0.3s;
+                    background-color: #FF6432;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
             }
         }
         &__item:nth-child(4){
@@ -146,6 +152,7 @@ body{
             font-size: 17.8805px;
             line-height: 109.5%;
             color: #A3A3A3;
+            transition: all 0.5s;
 		}
         &__role{
             margin-top: 7px;
@@ -169,14 +176,15 @@ body{
 		&__log-in {
             background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
             border-radius: 700px 675px 700px 700px;
-            transition: all 1s ease-out;
+            transition: all 0.5s ease-out;
             z-index: 10;
 		}
         &__log-in:hover {
-            background: linear-gradient(261.69deg, #FF5D29 12.12%, #ffcd8c 86.72%);
-            transition: all 1s ease-out;
+            opacity: 0.3;
+            transition: all 0.5s ease-out;
 		}
         &__log-in a:hover{
+            transition: all 0.5s ease-out;
             color: #000;
         }
 

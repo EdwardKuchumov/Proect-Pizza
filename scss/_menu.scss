@@ -31,9 +31,7 @@
         margin: 0 -12px;
         padding-top: 49px;
     }
-    &__menu-item:first-child {
-        background-color: #FF5924;
-    }
+
 
     // .main__menu-item
 
@@ -78,6 +76,7 @@
         justify-content: space-between;
         text-align: center;
         gap: 22px;
+        
     }
 
     // .main__pizza-item
@@ -345,4 +344,7 @@
 .focus{
     background-color: #210A01;
     border-radius: 10px;
+}
+.color-back-filter{
+    background: #FF5924;
 }

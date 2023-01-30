@@ -16,10 +16,10 @@
                     <div class="header__nav">
                         <nav class="header__nav-block">
                             <ul class="header__list">
-                                <li class="header__item"><a href="#" class="header__name">Home</a><div class="header__role"></div></li>
-                                <li class="header__item"><a href="#" class="header__name">Events</a><div class="header__role"></div></li>
-                                <li class="header__item"><a href="#" class="header__name">About Us</a><div class="header__role"></div></li>
-                                <li class="header__item"><a href="#" class="header__name">Menu</a><div class="header__role"></div></li>
+                                <li class="header__item"><a href="#" class="header__name">Home<div class="header__role"></div></a></li>
+                                <li class="header__item"><a href="#menu" class="header__name">Menu<div class="header__role"></div></a></li>
+                                <li class="header__item"><a href="#" class="header__name">Events<div class="header__role"></div></a></li>
+                                <li class="header__item"><a href="#" class="header__name">About Us<div class="header__role"></div></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -38,11 +38,15 @@
                         </div>
                         <div class="main__subtext">We will deliver juicy pizza for your family in 30 <br/> minutes, if the courier is late - <span>pizza is free!</span> </div>
                         <div class="main__subtext">Cooking process:</div>
-                        <div class="main__video-block"><img src="./img/shourav-sheikh-a66sGfOnnqQ-unsplash 1.png" alt="@" class="main__video"></div>
+                        <div class="main__video-block">
+                            <!-- <img src="./img/shourav-sheikh-a66sGfOnnqQ-unsplash 1.png" alt="@" class="main__video"> -->
+                            <iframe width="272" height="193" src="https://www.youtube.com/embed/jFOkJRgbgNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                         <div class="main__toggle-cont">
                             <div class="main__toggle-block">
-                                <div class="main__toggle-order color_button">To Order</div>
+                                <div class="main__toggle-order">To Order</div>
                                 <div class="main__toggle-menu">Pizza-Menu</div>
+                                <div class="main__toggle-backgroud"></div>
                             </div>
                             <div class="main__toggle-img"><img src="./img/Vector 1.png" alt="2" class="main__toggle-img-link"></div>
                         </div>
@@ -61,10 +65,10 @@
             </main>
             <main class="main">
                 <div class="main__menu-block">
-                    <div class="main__menu-header">Menu</div>
+                    <div class="main__menu-header" id="menu">Menu</div>
                     <div class="main__menu-filter-block">
                         <ul class="main__filter-list">
-                            <li class="main__menu-item" id="#showall">Show All</li>
+                            <li class="main__menu-item color-back-filter" id="#showall">Show All</li>
                             <li class="main__menu-item" id="#meat-filter">Meat</li>
                             <li class="main__menu-item" id="#vegitarian-filter">Vegitarian</li>
                             <li class="main__menu-item" id="#sea-filter">Sea produts</li>
@@ -72,7 +76,7 @@
                         </ul>
                     </div>
                     <div class="main__menu-select-pazza-block">
-                        <ul class="main__select-block">
+                        <ul class="main__select-block" id="#list-one">
                             <li class="main__pizza-item" id="#meat">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Italian</div>
@@ -207,7 +211,7 @@
                             </li>
                         </ul>
                         <div class="main__pizza-popular">MOST POPULAR PIZZA</div>
-                        <ul class="main__select-block">
+                        <ul class="main__select-block" id="list-two">
                             <li class="main__pizza-item" id="#sea">
                                 <div class="main__pizza-img"><img src="./img/1-pizza.png" alt="@" class="main__pizza-link"></div>
                                 <div class="main__pizza-name">Argentina</div>

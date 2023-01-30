@@ -78,21 +78,9 @@ buttonPlusAndMinusBlock.forEach(function(itemminus) {
 })
 
 // переключение на меню
-const buttonMenu = document.querySelector('.main__toggle-block')
-const orderBlock = document.querySelector('.main__toggle-order')
-const menuBlock = document.querySelector('.main__toggle-menu')
-
-function toggleButton() {
-  orderBlock.classList.toggle('color_button')
-  menuBlock.classList.toggle('color_button')
-  if (menuBlock.classList.contains('color_button')) {
-    menuBlock.style = 'color:#fff'
-  } else {
-    menuBlock.style = 'color:#FF5D29'
-  }
-}
-buttonMenu.addEventListener('click', function() {
-  toggleButton()
+const btnMenu = document.querySelector('.main__toggle-block');
+btnMenu.addEventListener('click', function() {
+  btnMenu.classList.toggle('main__toggle-menu-hover')
 })
 
 // фильтр пицы
@@ -102,56 +90,106 @@ const vegiterianFilterButton = document.getElementById('#vegitarian-filter')
 const seaFilterButton = document.getElementById('#sea-filter')
 const mushroomFilterButton = document.getElementById('#mushroom-filter')
 const allFilterButton = document.getElementById('#showall')
+const mainItemMenu = document.querySelectorAll('.main__menu-item')
+
+for (const elem of mainItemMenu) {
+  elem.addEventListener('click', function() {
+    elem.classList.remove('color-back-filter')
+    this.classList.add('color-back-filter')
+  })
+}
 
 function filterPizzaMeat() {
   allSelectPizza.forEach(function(item) {
+    item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#meat') {
       item.classList.remove('opas')
+    }
+    if (item.classList.contains('opas')) {
+      item.classList.add('none')
     }
   })
 }
 function filterPizzaVegiterian() {
   allSelectPizza.forEach(function(item) {
+    item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#vegetarian') {
       item.classList.remove('opas')
+    }
+    if (item.classList.contains('opas')) {
+      item.classList.add('none')
     }
   })
 }
 function filterPizzaSea() {
   allSelectPizza.forEach(function(item) {
+    item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#sea') {
       item.classList.remove('opas')
+    }
+    if (item.classList.contains('opas')) {
+      item.classList.add('none')
     }
   })
 }
 function filterPizzaMushroom() {
   allSelectPizza.forEach(function(item) {
+    item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#mushroom') {
       item.classList.remove('opas')
+    }
+    if (item.classList.contains('opas')) {
+      item.classList.add('none')
     }
   })
 }
 function showAllFilter() {
   allSelectPizza.forEach(function(item) {
+    item.classList.remove('none')
     item.classList.remove('opas')
   })
 }
 meatFilterButton.addEventListener('click', function() {
   filterPizzaMeat()
+  meatFilterButton.classList.add('color-back-filter')
+  vegiterianFilterButton.classList.remove('color-back-filter')
+  seaFilterButton.classList.remove('color-back-filter')
+  mushroomFilterButton.classList.remove('color-back-filter')
+  allFilterButton.classList.remove('color-back-filter')
 })
 vegiterianFilterButton.addEventListener('click', function() {
   filterPizzaVegiterian()
+  meatFilterButton.classList.remove('color-back-filter')
+  vegiterianFilterButton.classList.add('color-back-filter')
+  seaFilterButton.classList.remove('color-back-filter')
+  mushroomFilterButton.classList.remove('color-back-filter')
+  allFilterButton.classList.remove('color-back-filter')
 })
 seaFilterButton.addEventListener('click', function() {
   filterPizzaSea()
+  meatFilterButton.classList.remove('color-back-filter')
+  vegiterianFilterButton.classList.remove('color-back-filter')
+  seaFilterButton.classList.add('color-back-filter')
+  mushroomFilterButton.classList.remove('color-back-filter')
+  allFilterButton.classList.remove('color-back-filter')
 })
 mushroomFilterButton.addEventListener('click', function() {
   filterPizzaMushroom()
+  meatFilterButton.classList.remove('color-back-filter')
+  vegiterianFilterButton.classList.remove('color-back-filter')
+  seaFilterButton.classList.remove('color-back-filter')
+  mushroomFilterButton.classList.add('color-back-filter')
+  allFilterButton.classList.remove('color-back-filter')
 })
 allFilterButton.addEventListener('click', function() {
   showAllFilter()
+  meatFilterButton.classList.remove('color-back-filter')
+  vegiterianFilterButton.classList.remove('color-back-filter')
+  seaFilterButton.classList.remove('color-back-filter')
+  mushroomFilterButton.classList.remove('color-back-filter')
+  allFilterButton.classList.add('color-back-filter')
 })
