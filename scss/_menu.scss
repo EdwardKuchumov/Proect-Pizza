@@ -15,19 +15,21 @@
         color: #FFFFFF;
         padding-top: 147px;
         text-align: center;
+        
     }
 
     // .main__menu-filter-block
 
     &__menu-filter-block {
+
     }
 
     // .main__filter-list
 
     &__filter-list {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
         margin: 0 -12px;
         padding-top: 49px;
     }
@@ -44,17 +46,18 @@
         box-shadow: 0px 9px 40px rgba(189, 88, 16, 0.06);
         border-radius: 100px;
         padding: 19px 0px;
-        width: 100%;
+        // width: 100%;
+        width: 220px;
         display: flex;
         justify-content: center;
-        margin: 0 12px;
+        margin: 0 auto;
         cursor: pointer;
         transition: all 1s;
     }
     
     &__menu-item:hover{
         color: #FFFFFF;
-        background-color:#FF5924;
+        background-color:#FFA229;
         box-shadow: 0px 9px 40px rgba(255, 107, 0, 0.06);
         border-radius: 100px;
         transition: all 1s;
@@ -73,10 +76,12 @@
 
     &__select-block {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         text-align: center;
-        gap: 22px;
-        
+        gap: 10px;
+        position: relative;
+        top: 0;
     }
 
     // .main__pizza-item
@@ -86,9 +91,27 @@
         border-radius: 29.5312px;
         position: relative;
         top: 0;
-        transition: all 0.5s;
+        // transition: all 1s;
+        max-width: 297px;
+        margin-bottom: 56px;
     }
-
+    &__pizza-popular{
+        padding-top: 125px;
+        padding-bottom: 117px;
+        border-radius: 34px;
+        font-weight: 500;
+        font-size: 43.8638px;
+        line-height: 108.5%;
+        color: #FFFFFF;
+        text-shadow: 0px 11.5905px 10.2269px rgba(14, 4, 4, 0.38);
+        text-align: center;
+        background: url(../img/Rectangle\ 13.png) 0 0 no-repeat;
+        background-position: center;
+        margin-top: 0px;
+        margin-bottom: 112px;
+        width: 100%;
+        // order: 1;
+    }
     // .main__pizza-img
 
     &__pizza-img {
@@ -145,6 +168,7 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 3px;
+        cursor: pointer;
     }
     &__select-size:hover{
         background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
@@ -167,16 +191,18 @@
         font-weight: 400;
         font-size: 16.0839px;
         line-height: 109.5%;
+        transition: all 0.5s;
         background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         padding: 11px 52px;
+        
     }
     &__pizza-ingridients:hover{
-        background: linear-gradient(261.69deg, #ffffff 12.12%, #ffffff 86.72%);
-        color: #FFFFFF;
+        opacity: 0.5;
+        transition: all 0.5s;
     }
 
     // .main__cash-and-number-block
@@ -288,24 +314,13 @@
         background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
         box-shadow: 0px 7.59366px 33.7496px rgba(255, 107, 0, 0.06);
         border-radius: 84.374px;
+        transition: all 0.5s;
     }
     &__order-now:hover{
-        background: linear-gradient(261.69deg, #FF5924 12.12%, #ffffff 86.72%);
+        opacity: 0.5;
     }
 }
-.main__pizza-popular{
-    padding-top: 125px;
-    padding-bottom: 117px;
-    font-weight: 500;
-    font-size: 43.8638px;
-    line-height: 108.5%;
-    color: #FFFFFF;
-    text-shadow: 0px 11.5905px 10.2269px rgba(14, 4, 4, 0.38);
-    text-align: center;
-    background: url(../img/Rectangle\ 13.png) 0 0 no-repeat;
-    margin-top: 56px;
-    margin-bottom: 112px;
-}
+
 .conteiner-pizza-item{
     max-width: 194px;
     margin: 0 auto;

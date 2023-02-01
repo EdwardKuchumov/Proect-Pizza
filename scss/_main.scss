@@ -151,6 +151,7 @@
     &__img-link {
         position: relative;
         top: 0;
+        
     }
     &__toggle-img{
         position: absolute;
@@ -163,6 +164,9 @@
     &__img-fone {
         padding-top: 30px;
         margin-right: -30px;
+        width: 100%;
+        object-fit: cover;
+        // overflow: hidden;
     }
 
     // .main__img-top
@@ -171,6 +175,7 @@
         position: absolute;
         top: 1-75px;
         right: -125px;
+        // overflow: hidden;
     }
 
     // .main__img-bottom
@@ -191,6 +196,7 @@
         top: -49px;
         right: -137px;
         z-index: -1;
+        // overflow: hidden;
     }
     &__text-pizza3{
         position: absolute;

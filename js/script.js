@@ -91,6 +91,7 @@ const seaFilterButton = document.getElementById('#sea-filter')
 const mushroomFilterButton = document.getElementById('#mushroom-filter')
 const allFilterButton = document.getElementById('#showall')
 const mainItemMenu = document.querySelectorAll('.main__menu-item')
+const popularPizza = document.querySelector('.main__pizza-popular')
 
 for (const elem of mainItemMenu) {
   elem.addEventListener('click', function() {
@@ -101,55 +102,55 @@ for (const elem of mainItemMenu) {
 
 function filterPizzaMeat() {
   allSelectPizza.forEach(function(item) {
-    item.classList.remove('none')
+    // item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#meat') {
       item.classList.remove('opas')
     }
     if (item.classList.contains('opas')) {
-      item.classList.add('none')
+      // item.classList.add('none')
     }
   })
 }
 function filterPizzaVegiterian() {
   allSelectPizza.forEach(function(item) {
-    item.classList.remove('none')
+    // item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#vegetarian') {
       item.classList.remove('opas')
     }
     if (item.classList.contains('opas')) {
-      item.classList.add('none')
+      // item.classList.add('none')
     }
   })
 }
 function filterPizzaSea() {
   allSelectPizza.forEach(function(item) {
-    item.classList.remove('none')
+    // item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#sea') {
       item.classList.remove('opas')
     }
     if (item.classList.contains('opas')) {
-      item.classList.add('none')
+      // item.classList.add('none')
     }
   })
 }
 function filterPizzaMushroom() {
   allSelectPizza.forEach(function(item) {
-    item.classList.remove('none')
+    // item.classList.remove('none')
     item.classList.add('opas')
     if (item.id == '#mushroom') {
       item.classList.remove('opas')
     }
     if (item.classList.contains('opas')) {
-      item.classList.add('none')
+      // item.classList.add('none')
     }
   })
 }
 function showAllFilter() {
   allSelectPizza.forEach(function(item) {
-    item.classList.remove('none')
+    // item.classList.remove('none')
     item.classList.remove('opas')
   })
 }
@@ -160,6 +161,7 @@ meatFilterButton.addEventListener('click', function() {
   seaFilterButton.classList.remove('color-back-filter')
   mushroomFilterButton.classList.remove('color-back-filter')
   allFilterButton.classList.remove('color-back-filter')
+  popularPizza.style.order = '1'
 })
 vegiterianFilterButton.addEventListener('click', function() {
   filterPizzaVegiterian()
@@ -168,6 +170,7 @@ vegiterianFilterButton.addEventListener('click', function() {
   seaFilterButton.classList.remove('color-back-filter')
   mushroomFilterButton.classList.remove('color-back-filter')
   allFilterButton.classList.remove('color-back-filter')
+  popularPizza.style.order = '1'
 })
 seaFilterButton.addEventListener('click', function() {
   filterPizzaSea()
@@ -176,6 +179,7 @@ seaFilterButton.addEventListener('click', function() {
   seaFilterButton.classList.add('color-back-filter')
   mushroomFilterButton.classList.remove('color-back-filter')
   allFilterButton.classList.remove('color-back-filter')
+  popularPizza.style.order = '1'
 })
 mushroomFilterButton.addEventListener('click', function() {
   filterPizzaMushroom()
@@ -184,6 +188,7 @@ mushroomFilterButton.addEventListener('click', function() {
   seaFilterButton.classList.remove('color-back-filter')
   mushroomFilterButton.classList.add('color-back-filter')
   allFilterButton.classList.remove('color-back-filter')
+  popularPizza.style.order = '1'
 })
 allFilterButton.addEventListener('click', function() {
   showAllFilter()
@@ -192,4 +197,5 @@ allFilterButton.addEventListener('click', function() {
   seaFilterButton.classList.remove('color-back-filter')
   mushroomFilterButton.classList.remove('color-back-filter')
   allFilterButton.classList.add('color-back-filter')
+  popularPizza.style.order = '0'
 })

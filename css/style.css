@@ -111,6 +111,9 @@
 .main__img-fone {
   padding-top: 30px;
   margin-right: -30px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main__img-top {
   position: absolute;
@@ -155,8 +158,8 @@ iframe {
 }
 .main__filter-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
   margin: 0 -12px;
   padding-top: 49px;
 }
@@ -169,16 +172,16 @@ iframe {
   box-shadow: 0px 9px 40px rgba(189, 88, 16, 0.06);
   border-radius: 100px;
   padding: 19px 0px;
-  width: 100%;
+  width: 220px;
   display: flex;
   justify-content: center;
-  margin: 0 12px;
+  margin: 0 auto;
   cursor: pointer;
   transition: all 1s;
 }
 .main__menu-item:hover {
   color: #FFFFFF;
-  background-color: #FF5924;
+  background-color: #FFA229;
   box-shadow: 0px 9px 40px rgba(255, 107, 0, 0.06);
   border-radius: 100px;
   transition: all 1s;
@@ -189,16 +192,36 @@ iframe {
 }
 .main__select-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
-  gap: 22px;
+  gap: 10px;
+  position: relative;
+  top: 0;
 }
 .main__pizza-item {
   background: #250b01;
   border-radius: 29.5312px;
   position: relative;
   top: 0;
-  transition: all 0.5s;
+  max-width: 297px;
+  margin-bottom: 56px;
+}
+.main__pizza-popular {
+  padding-top: 125px;
+  padding-bottom: 117px;
+  border-radius: 34px;
+  font-weight: 500;
+  font-size: 43.8638px;
+  line-height: 108.5%;
+  color: #FFFFFF;
+  text-shadow: 0px 11.5905px 10.2269px rgba(14, 4, 4, 0.38);
+  text-align: center;
+  background: url(../img/Rectangle\ 13.png) 0 0 no-repeat;
+  background-position: center;
+  margin-top: 0px;
+  margin-bottom: 112px;
+  width: 100%;
 }
 .main__pizza-img {
   position: absolute;
@@ -237,6 +260,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   padding-top: 3px;
+  cursor: pointer;
 }
 .main__select-size:hover {
   background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
@@ -253,6 +277,7 @@ iframe {
   font-weight: 400;
   font-size: 16.0839px;
   line-height: 109.5%;
+  transition: all 0.5s;
   background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -261,8 +286,8 @@ iframe {
   padding: 11px 52px;
 }
 .main__pizza-ingridients:hover {
-  background: linear-gradient(261.69deg, #ffffff 12.12%, #ffffff 86.72%);
-  color: #FFFFFF;
+  opacity: 0.5;
+  transition: all 0.5s;
 }
 .main__cash-and-number-block {
   display: flex;
@@ -344,23 +369,10 @@ iframe {
   background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
   box-shadow: 0px 7.59366px 33.7496px rgba(255, 107, 0, 0.06);
   border-radius: 84.374px;
+  transition: all 0.5s;
 }
 .main__order-now:hover {
-  background: linear-gradient(261.69deg, #FF5924 12.12%, #ffffff 86.72%);
-}
-
-.main__pizza-popular {
-  padding-top: 125px;
-  padding-bottom: 117px;
-  font-weight: 500;
-  font-size: 43.8638px;
-  line-height: 108.5%;
-  color: #FFFFFF;
-  text-shadow: 0px 11.5905px 10.2269px rgba(14, 4, 4, 0.38);
-  text-align: center;
-  background: url(../img/Rectangle\ 13.png) 0 0 no-repeat;
-  margin-top: 56px;
-  margin-bottom: 112px;
+  opacity: 0.5;
 }
 
 .conteiner-pizza-item {
@@ -506,6 +518,7 @@ body {
 .container {
   max-width: 1253px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header__block {
@@ -618,9 +631,52 @@ body {
 }
 
 .opas {
-  opacity: 0;
+  opacity: 1;
+  -webkit-animation-name: opasityelement;
+          animation-name: opasityelement;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes opasityelement {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    order: -1;
+  }
+}
+
+@keyframes opasityelement {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    order: -1;
+  }
+}
 .main__modal-block {
   position: fixed;
   top: 0;
@@ -696,4 +752,154 @@ input {
 
 .color_button {
   background-color: #FF5D29;
+}
+
+@media (max-width: 1122px) {
+  .main__text-pizza2,
+.main__text-pizza3,
+.main__title-img-vector,
+.main__toggle-img {
+    display: none;
+  }
+  .main__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__img-top {
+    left: 60%;
+  }
+  .main__img-block {
+    order: -1;
+  }
+}
+@media (max-width: 922px) {
+  .header__item {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 720px) {
+  .header__log-in,
+.main__text-pizza1,
+.header__item {
+    display: none;
+  }
+  .main__img-top,
+.main__img-bottom {
+    width: 30%;
+  }
+  .main__img-top {
+    top: -5%;
+  }
+  .main__img-bottom {
+    left: 15%;
+    bottom: -8%;
+  }
+  .main__img-fone {
+    width: 55%;
+  }
+  .main__img-link {
+    text-align: center;
+  }
+  .main__title-text {
+    font-size: 48px;
+  }
+  .main__title-block {
+    padding-top: 56px;
+  }
+  .main__subtext {
+    font-size: 14px;
+    line-height: 151.5%;
+  }
+  iframe {
+    width: 194px;
+    height: 138px;
+  }
+  .main__toggle-order {
+    font-size: 16.0122px;
+    line-height: 123.5%;
+    padding: 12px 72px;
+  }
+  .main__toggle-menu {
+    font-size: 13.4193px;
+    line-height: 123.5%;
+    padding: 10px 35px 9px 19px;
+  }
+  .main__toggle-backgroud {
+    width: 201.93px;
+    height: 44px;
+  }
+  .main__toggle-menu-hover .main__toggle-backgroud {
+    width: 146px;
+    left: 190px;
+  }
+  .main__menu-header {
+    font-size: 48px;
+    padding-top: 70px;
+  }
+  .main__menu-item {
+    font-size: 12.2296px;
+    line-height: 109.5%;
+    width: 140px;
+    padding: 12px 0;
+  }
+  .main__menu-item:nth-child(2) {
+    width: 70px;
+  }
+  .main__pizza-item {
+    max-width: 181px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .main__pizza-link {
+    width: 120px;
+  }
+  .main__filter-list {
+    gap: 10px;
+  }
+  .main__pizza-name {
+    font-size: 15.3492px;
+    padding-top: 70px;
+  }
+  .main__pizza-description {
+    font-size: 8.7562px;
+  }
+  .main__pizza-select-size {
+    font-size: 8.7562px;
+    justify-content: space-around;
+  }
+  .main__select-size {
+    width: 25px;
+    height: 25px;
+  }
+  .main__pizza-ingridients {
+    max-width: 118px;
+  }
+  .main__ingridients-button {
+    padding: 12px 13px;
+    font-size: 9.835px;
+  }
+  .main__price,
+.main__currency {
+    font-size: 15.5654px;
+  }
+  .main__cash-and-number-block {
+    justify-content: space-around;
+  }
+  .main__order-now {
+    font-size: 10.6709px;
+    line-height: 109.5%;
+    padding: 9px 28px 7px 28px;
+  }
+  .main__pizza-popular {
+    font-size: 26.8218px;
+    line-height: 108.5%;
+    padding: 74px 0;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
 }
