@@ -199,3 +199,18 @@ allFilterButton.addEventListener('click', function() {
   allFilterButton.classList.add('color-back-filter')
   popularPizza.style.order = '0'
 })
+/*   бургер меню------------------------------------------------ */
+
+const blockBurger = document.querySelector('.header__nav-burger');
+const buttonBurger = document.querySelector('.header__burger');
+const headerItem = document.querySelectorAll('.header__name');
+
+buttonBurger.addEventListener('click', function() {
+  blockBurger.classList.add('top');
+})
+
+headerItem.forEach(function(item) {
+  item.addEventListener('click', function() {
+    blockBurger.classList.remove('top')
+  })
+})
