@@ -1,0 +1,229 @@
+.main {
+
+    &__events-block{
+        max-width: 1253px;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-right: 10px;
+        overflow: scroll;
+        
+    }
+    &__events-block::-webkit-scrollbar{
+        width: 0px;
+    
+    }
+    // .main__events-grid-block
+
+    &__events-grid-block {
+        display: grid;
+        grid-template-rows: 260px 260px 260px;
+        grid-template-columns: 1fr 1fr 201px 1fr 1fr 1fr;
+        gap: 23px;
+        grid-template-areas: "a a b b c c"
+                            "d d d e e e"
+                            "f f g g h h";
+    }
+    &__events-grid-block > div{
+        border-radius:30px;
+
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__events-img{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius:30px;
+    }
+    // .main__events-item-how-we
+    &__events-text{
+        position: relative;
+        z-index: 3;
+        padding-left: 25px;
+        font-weight: 500;
+        font-size: 25.0926px;
+        line-height: 108.5%;
+        color: #FFFFFF;
+        padding-top: 50px;
+    }
+    &__events-button{
+        position: relative;
+        z-index: 3;
+        padding-left: 25px;
+        transition: all 0.5s;
+    }
+    &__events-button:hover{
+        opacity: 0.5;
+        transition: all 0.5s;
+        .main__events-more{
+            opacity: 1;
+        }
+    }
+    &__events-more{
+        padding: 11px 84px;
+        background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+        border-radius: 32px;
+        font-weight: 500;
+        font-size: 15.3846px;
+        line-height: 108.5%;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &__events-item-how-we {
+
+        grid-area: a;
+    }
+
+    // .main__events-item-our-blog
+
+    &__events-item-our-blog {
+
+        grid-area: b;
+    }
+
+    // .main__events-item-events
+
+    &__events-item-events {
+        grid-area: c;
+    }
+
+    // .main__events-item-two-pizza
+
+    &__events-item-two-pizza {
+        
+        grid-area: d;
+    }
+
+    // .main__events-item-kithen
+
+    &__events-item-kithen {
+        
+        grid-area: e;
+    }
+
+    // .main__events-item-free
+
+    &__events-item-free {
+        
+        grid-area: f;
+    }
+
+    // .main__events-item-our
+
+    &__events-item-our {
+        
+        grid-area: g;
+    }
+
+    // .main__events-item-where
+
+    &__events-item-where {
+        
+        grid-area: h;
+    }
+}
+.main {
+
+    // .main__events-item-events
+
+    &__events-item-events {
+        align-items: flex-end;
+    }
+
+    // .main__events-text-nameblock
+
+    &__events-text-nameblock {
+        font-weight: 800;
+        font-size: 69.1697px;
+        line-height: 109.5%;
+        color: #FFFFFF;
+        padding-top: 104px;
+    }
+
+    // .main__events-text-subnameblock
+
+    &__events-text-subnameblock {
+        font-weight: 400;
+        font-size: 18.5621px;
+        line-height: 27px;
+        text-align: right;
+        color: #A3A3A3;
+    }
+}
+// ---------------------скрыйтый блок Events
+
+.main {
+
+    // .main__hidden-block
+
+    &__hidden-block {
+        display: none;
+        text-align: right;
+        padding-right: 17px;
+    }
+
+    // .main__events-item-events-hidden
+
+    &__events-item-events-hidden {
+    }
+
+    // .main__events-text-nameblock-hidden
+
+    &__events-text-nameblock-hidden {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 109.5%;
+        color: #FFFFFF;
+    }
+
+    // .main__events-text-subnameblock-hidden
+
+    &__events-text-subnameblock-hidden {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 136%;
+        color: #A3A3A3;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+}
+// // ----------------------картинки на блоках
+
+// .main {
+
+//     // .main__events-img-item1
+
+//     &__events-img-item1 {
+//         position: absolute;
+//         top: 129px;
+//         left: -136px;
+//         z-index: 2;
+//     }
+
+//     // .main__events-img-item2
+
+//     &__events-img-item2 {
+//         position: absolute;
+//         top: 237px;
+//         right: -121px;
+//         z-index: 2;
+//     }
+
+//     // .main__events-img-item3
+
+//     &__events-img-item3 {
+//         position: absolute;
+//         left: -113px;
+//         bottom: -73px;
+//         z-index: 2;
+//     }
+// }
+
+

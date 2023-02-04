@@ -1,3 +1,4 @@
+// --------------------------------------выбор ингридиентов
 const ingriButton = document.querySelectorAll('.main__pizza-ingridients');
 const ingriBlock = document.querySelectorAll('.main__pizza-ingridients-item');
 const ingriComponents = document.querySelectorAll('.main__pizza-ingridients-link')
@@ -48,7 +49,7 @@ sizeBlock.forEach(function(item) {
     })
   })
 })
-// кол-во пиц
+// -------------------------------------------------кол-во пиц
 let i = 1
 let r = 0
 const buttonPlusAndMinusBlock = document.querySelectorAll('.main__number-block');
@@ -77,13 +78,13 @@ buttonPlusAndMinusBlock.forEach(function(itemminus) {
 })
 })
 
-// переключение на меню
+// ---------------------------------------------------переключение на меню
 const btnMenu = document.querySelector('.main__toggle-block');
 btnMenu.addEventListener('click', function() {
   btnMenu.classList.toggle('main__toggle-menu-hover')
 })
 
-// фильтр пицы
+// ----------------------------------------------------------фильтр пицы
 const allSelectPizza = document.querySelectorAll('.main__pizza-item')
 const meatFilterButton = document.getElementById('#meat-filter')
 const vegiterianFilterButton = document.getElementById('#vegitarian-filter')
@@ -199,7 +200,7 @@ allFilterButton.addEventListener('click', function() {
   allFilterButton.classList.add('color-back-filter')
   popularPizza.style.order = '0'
 })
-/*   бургер меню------------------------------------------------ */
+/*   -------------------------------------------бургер меню------------------------------------------------ */
 
 const blockBurger = document.querySelector('.header__nav-burger');
 const buttonBurger = document.querySelector('.header__burger');
