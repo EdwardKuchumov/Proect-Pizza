@@ -50,8 +50,8 @@ sizeBlock.forEach(function(item) {
   })
 })
 // -------------------------------------------------кол-во пиц
-let i = 1
-let r = 0
+let i = 0
+
 const buttonPlusAndMinusBlock = document.querySelectorAll('.main__number-block');
 const mainNumberBlock = document.querySelectorAll('.main__number');
 
@@ -61,18 +61,19 @@ buttonPlusAndMinusBlock.forEach(function(item) {
     newitem.addEventListener('click', function() {
       this.previousElementSibling.innerHTML = i++;
       if (i > 20) {
-        i = 0
+        i = 20
       }
     })
   })
 })
+
 buttonPlusAndMinusBlock.forEach(function(itemminus) {
   const thisItemMinus = itemminus.querySelectorAll('.main__number-minus');
   thisItemMinus.forEach(function(newitemminus){
   newitemminus.addEventListener('click', function() {
     this.nextElementSibling.innerHTML = i--;
     if (i < 0) {
-      i = 20
+      i = 0
     }
   })
 })

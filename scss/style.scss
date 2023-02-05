@@ -124,7 +124,8 @@ body{
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgb(92, 92, 92, 80%);
+        background-color: rgba(34, 18, 0, 0.8);
+        z-index: 5;
     }
 
     // .main__modal
@@ -451,6 +452,9 @@ input{
     }
     .main__filter-list{
         margin: 0 10px;
+    }
+    .main__menu-item:nth-child(2){
+        width: 100%;
     }
 }
 @media (prefers-reduced-motion: no-preference) {
