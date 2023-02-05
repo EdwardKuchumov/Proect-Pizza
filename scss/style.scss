@@ -4,6 +4,7 @@
 @import '_events';
 @import '_menu';
 @import '_about';
+@import '_footer';
 
 @font-face {
     font-family: 'Muller';
@@ -249,6 +250,24 @@ input{
         font-size: 9.57864px;
         padding: 6px 50px;
     }
+    .main__about-img-free{
+        display: none;
+    }
+    .main__about-img-pizza{
+        display: none;
+    }
+    .main__about-block{
+        flex-direction: column;
+    }
+    .main__about-right-block{
+        order: -1;
+    }
+    .footer__block{
+        gap: 44px;
+    }
+    .footer__nav-item{
+        gap: 44px;
+    }
 }
 @media (max-width: 720px) {
     .header__log-in,
@@ -393,7 +412,32 @@ input{
     .main__hidden-block{
         display: block;
     }
-
+    .main__about-title{
+        font-size: 48px;
+    }
+    .main__about-text{
+        font-size: 14px;
+        line-height: 136%;
+    }
+    .footer__block{
+        display: block;
+        
+    }
+    .footer__nav-item{
+        flex-wrap: wrap;
+    }
+    .footer__logo-block{
+        padding-bottom: 58px;
+    }
+    .footer__item{
+        font-size: 15.3469px;
+    }
+    .footer__link{
+        font-size: 13.8604px;
+    }
+    .footer__block-number{
+        font-size: 14.4561px;
+    }
 }
 @media (max-width: 400px) {
     .main__pizza-item{

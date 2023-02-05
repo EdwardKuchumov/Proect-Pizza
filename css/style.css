@@ -681,6 +681,119 @@ iframe {
   background: #FF5924;
 }
 
+.main__about-block {
+  padding-top: 113px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__about-left-block {
+  max-width: 500px;
+}
+.main__about-title {
+  font-weight: 800;
+  font-size: 69.1697px;
+  line-height: 109.5%;
+  color: #FFFFFF;
+}
+.main__about-text {
+  font-weight: 400;
+  font-size: 19.5621px;
+  line-height: 27px;
+  color: #A3A3A3;
+}
+.main__about-img-left {
+  padding-bottom: 22px;
+}
+.main__about-img-link {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__about-img-block {
+  position: relative;
+  top: 0;
+}
+.main__about-img-fone {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__about-img-pizza {
+  position: absolute;
+  top: -95px;
+  right: -67px;
+}
+.main__about-img-free {
+  position: absolute;
+  bottom: -32px;
+  left: -64px;
+}
+
+.footer {
+  background: linear-gradient(245.71deg, #170A00 4.96%, #170600 33.7%, #0F0700 68.41%, #170A00 96.42%);
+}
+.footer__block {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 84px;
+  padding-top: 70px;
+}
+.footer__nav-item {
+  display: flex;
+  gap: 84px;
+}
+.footer__item {
+  font-weight: 400;
+  font-size: 19.6259px;
+  line-height: 125.68%;
+  letter-spacing: -0.02em;
+  color: #A3A3A3;
+}
+.footer__link {
+  padding: 6px 0;
+  font-weight: 400;
+  font-size: 17.7249px;
+  line-height: 125.68%;
+  letter-spacing: -0.02em;
+  color: #515151;
+  cursor: pointer;
+}
+.footer__link:hover {
+  color: #A3A3A3;
+}
+.footer__link-href {
+  color: inherit;
+  font-weight: 400;
+  font-size: 17.7249px;
+  line-height: 125.68%;
+  letter-spacing: -0.02em;
+  color: #515151;
+}
+.footer__link-href:hover {
+  color: #A3A3A3;
+}
+.footer__link:first-child {
+  padding-top: 19px;
+}
+.footer__bottom-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+.footer__block-number {
+  font-weight: 400;
+  font-size: 20.881px;
+  line-height: 125.68%;
+  letter-spacing: -0.02em;
+  background: linear-gradient(261.69deg, #FF612E 12.12%, #FFA32B 86.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 @font-face {
   font-family: "Muller";
   src: local("Muller"), url("..//fonts/Muller-ExtraBold.ttf") format("truetype"), url("..//fonts/Muller-ExtraBold.eot?#iefix") format("embedded-opentype"), url("..//fonts/Muller-ExtraBold.woff") format("woff");
@@ -961,6 +1074,24 @@ input {
     font-size: 9.57864px;
     padding: 6px 50px;
   }
+  .main__about-img-free {
+    display: none;
+  }
+  .main__about-img-pizza {
+    display: none;
+  }
+  .main__about-block {
+    flex-direction: column;
+  }
+  .main__about-right-block {
+    order: -1;
+  }
+  .footer__block {
+    gap: 44px;
+  }
+  .footer__nav-item {
+    gap: 44px;
+  }
 }
 @media (max-width: 720px) {
   .header__log-in,
@@ -1103,6 +1234,31 @@ input {
   }
   .main__hidden-block {
     display: block;
+  }
+  .main__about-title {
+    font-size: 48px;
+  }
+  .main__about-text {
+    font-size: 14px;
+    line-height: 136%;
+  }
+  .footer__block {
+    display: block;
+  }
+  .footer__nav-item {
+    flex-wrap: wrap;
+  }
+  .footer__logo-block {
+    padding-bottom: 58px;
+  }
+  .footer__item {
+    font-size: 15.3469px;
+  }
+  .footer__link {
+    font-size: 13.8604px;
+  }
+  .footer__block-number {
+    font-size: 14.4561px;
   }
 }
 @media (max-width: 400px) {

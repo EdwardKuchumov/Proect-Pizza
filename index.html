@@ -11,25 +11,26 @@
     <div class="wrapper">
         <div class="container">
             <header class="header">
-                <div class="header__block">
+                <div class="header__block" id="home">
                     <div class="header__logo"><a href="#" class="header__logo-link">pizzashop</a></div>
                     <div class="header__nav">
                         <nav class="header__nav-block">
                             <ul class="header__list">
-                                <li class="header__item"><a href="#" class="header__name">Home<div class="header__role"></div></a></li>
+                                <li class="header__item"><a href="#home" class="header__name">Home<div class="header__role"></div></a></li>
                                 <li class="header__item"><a href="#menu" class="header__name">Menu<div class="header__role"></div></a></li>
-                                <li class="header__item"><a href="#" class="header__name">Events<div class="header__role"></div></a></li>
-                                <li class="header__item"><a href="#" class="header__name">About Us<div class="header__role"></div></a></li>
+                                <li class="header__item"><a href="#events" class="header__name">Events<div class="header__role"></div></a></li>
+                                <li class="header__item"><a href="#about" class="header__name">About Us<div class="header__role"></div></a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header__nav-burger">
                         <nav class="header__nav-block-burger">
                             <ul class="header__list-burger">
+                                <li class="header__item-burger"><a href="#home" class="header__name">Home</a></li>
                                 <li class="header__item-burger"><a href="#menu" class="header__name">Menu</a></li>
-                                <li class="header__item-burger"><a href="#" class="header__name">Events</a></li>
-                                <li class="header__item-burger"><a href="#" class="header__name">About Us</a></li>
-                                <li class="header__item-burger"><a href="#" class="header__name">Home</a></li>
+                                <li class="header__item-burger"><a href="#events" class="header__name">Events</a></li>
+                                <li class="header__item-burger"><a href="#about" class="header__name">About Us</a></li>
+                                
                             </ul>
                         </nav>
                     </div>
@@ -516,9 +517,9 @@
                     <div class="main__events-text-subnameblock-hidden">There are regular events in our pizzeria that will <br/>allow you to eat delicious food for a lower price!</div>
                 </div>
             </div>
-            <main class="main-events">
-                <div class="main__events-block">
-                    <div class="main__events-grid-block">
+            <main class="main">
+                <div class="main__events-block" >
+                    <div class="main__events-grid-block" id="events">
                         <div class="main__events-item-how-we">
                             <img src="./img/event-1.png" alt="@" class="main__events-img">
                             <div class="main__events-text">HOW WE <br/>COOKING</div>
@@ -578,7 +579,68 @@
                     <img src="./img/cofee 1.png" alt="@" class="main__events-img-item3"> -->
                 </div>
             </main>
-            <footer class="footer"></footer>
+            <main class="main">
+                <div class="main__about-contsiner" id="about">
+                    <div class="main__about-block">
+                        <div class="main__about-left-block">
+                            <div class="main__about-title">About us</div>
+                            <div class="main__about-text">In just a couple of years, we have opened 6 outlets in different cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in other major cities of Russia.</div>
+                            <div class="main__about-img-left"><img src="./img/Group 60.png" alt="@" class="main__about-img-link"></div>
+                            <div class="main__about-text">The kitchen of each point is at least: 400-500 <br/>sq. m. meters, hundreds of employees, smoothly <br/>performing work in order to receive / prepare /<br/> form / deliver customer orders on time.</div>
+                        </div>
+                        <div class="main__about-right-block">
+                            <div class="main__about-img-block">
+                                <img src="./img/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden 1.png" alt="@" class="main__about-img-fone">
+                                <img src="./img/pizza 1.png" alt="@" class="main__about-img-pizza">
+                                <img src="./img/fries 1.png" alt="@" class="main__about-img-free">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__block">
+                    <div class="footer__logo-block">
+                        <a href="#" class="header__logo-link">pizzashop</a>
+                    </div>
+                    <div class="footer__nav-block">
+                        <ul class="footer__nav-item">
+                            <li class="footer__item">
+                                Home
+                                <p class="footer__link"><a href="#" class="footer__link-href">To Order</a></p>
+                                <p class="footer__link"><a href="#about" class="footer__link-href">About Us</a></p>
+                                <p class="footer__link"><a href="#events" class="footer__link-href">Events</a></p>
+                                <p class="footer__link"><a href="#menu" class="footer__link-href">Menu</a></p>
+                            </li>
+                            <li class="footer__item">
+                                Events
+                                <p class="footer__link">3 Pizza 1 Free Coffee</p>
+                                <p class="footer__link">2 Pizza for 1 Price</p>
+                                <p class="footer__link">Kitchen Tour</p>
+                            </li>
+                            </li>
+                            <li class="footer__item">
+                                Menu
+                                <p class="footer__link">Show All</p>
+                                <p class="footer__link">Seaproducts</p>
+                                <p class="footer__link">Vegan</p>
+                                <p class="footer__link">Meat</p>
+                            </li>
+                            </li>
+                            <li class="footer__item">
+                                About Us
+                                <p class="footer__link">Our History</p>
+                                <p class="footer__link">Why We?</p>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom-block">
+                    <div class="footer__block-number">+7 (937) 333-55-33</div>
+                    <div class="footer__block-cousety"><img src="./img/icons/sousety.svg" alt="sousety" class="footer__sousety"></div>
+                </div>
+            </footer>
         </div>
     </div>
 
